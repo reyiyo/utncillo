@@ -1,0 +1,10 @@
+Package: swi-prolog-gnutn
+Version: 0.1
+Section: metapackages
+Maintainer: Sergio Orbe <reyiyo@gnutn.org.ar>
+Priority: optional
+Architecture: all
+Depends: eclipse-prodt-gnutn (>=0.1), prolog-el (>=1.22), swi-prolog (>=5.8)
+Description: Metapaquete con las herramientas necesarias para Prolog
+ Metapaquete con las herramientas necesarias para swi-prolog, que instala prolog, eclipse y ProDT
+
