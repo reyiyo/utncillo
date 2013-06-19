@@ -1,0 +1,15 @@
+Package: swi-prolog-gnutn
+Version: 0.1
+Installed-Size: 64
+Source: https://github.com/reyiyo/utncillo/blob/master/debs/Ingenier%C3%ADa%20en%20Sistemas/Paradigmas%20de%20Programaci%C3%B3n/swi-prolog-gnutn
+Maintainer: Sergio Orbe <reyiyo@gnutn.org.ar>
+Section: metapackages
+Homepage: https://github.com/reyiyo/utncillo
+Priority: optional
+Architecture: all
+Depends: swi-prolog (>=5.8), prolog-el (>=1.22), eclipse-prodt-gnutn (>=0.1)
+Description: Metapaquete con las herramientas necesarias para Prolog
+ Metapaquete con las herramientas necesarias para swi-prolog, que instala prolog, eclipse y ProDT
+
+
+

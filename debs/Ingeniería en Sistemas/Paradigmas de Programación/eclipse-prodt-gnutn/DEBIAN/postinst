@@ -1,0 +1,23 @@
+download_dir=/tmp/prodt
+eclipse_dir=/usr/lib/eclipse
+plugin_file=ar.com.tadp.prolog-1.0.0.zip
+prodt_url='http://downloads.sourceforge.net/project/prodevtools/Prolog%20Development%20Tools/1.0.0/ar.com.tadp.prolog-1.0.0.zip?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fprodevtools%2Ffiles%2FProlog%2520Development%2520Tools%2F1.0.0%2F&ts=1371668469&use_mirror=tenet'
+
+mkdir -p $download_dir
+
+echo "Descargando plugin para Prolog (ProDT)..."
+
+wget -O ${download_dir}/${plugin_file} $prodt_url
+
+echo "Instalando plugin..."
+
+unzip ${download_dir}/${plugin_file} -d $download_dir
+
+for dir in `ls ${download_dir}`
+do
+	if [ -d $dir ]
+	then
+		cp -r ${download_dir}/${dir}/eclipse/features/* ${eclipse_dir}/features
+		cp -r ${download_dir}/${dir}/eclipse/plugins/* ${eclipse_dir}/plugins
+	fi
+done

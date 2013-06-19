@@ -1,9 +1,15 @@
 Package: eclipse-prodt-gnutn
 Version: 0.1
-Section: metapackages
+Installed-Size: 64
+Source: https://github.com/reyiyo/utncillo/blob/master/debs/Ingenier%C3%ADa%20en%20Sistemas/Paradigmas%20de%20Programaci%C3%B3n/eclipse-prodt-gnutn
 Maintainer: Sergio Orbe <reyiyo@gmail.com>
+Section: metapackages
+Homepage: http://gnutn.org.ar
 Priority: optional
 Architecture: all
+Depends: wget (>=1.10), unzip (>=6.0), eclipse (>=3.6)
 Description: Eclipse + Prolog Developement Tools
  Metapaquete que instala Eclipse + Prolog Developement Tools, perteneciente al metapaquete de swi-prolog-gnutn
+
+
 
